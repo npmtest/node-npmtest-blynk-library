@@ -1,6 +1,6 @@
 # npmtest-blynk-library
 
-#### basic test coverage for  blynk-library (v0.4.7)  [![npm package](https://img.shields.io/npm/v/npmtest-blynk-library.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-blynk-library) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-blynk-library.svg)](https://travis-ci.org/npmtest/node-npmtest-blynk-library)
+#### basic test coverage for  [blynk-library (v0.4.7)](https://github.com/vshymanskyy/blynk-library-js#readme)  [![npm package](https://img.shields.io/npm/v/npmtest-blynk-library.svg?style=flat-square)](https://www.npmjs.org/package/npmtest-blynk-library) [![travis-ci.org build-status](https://api.travis-ci.org/npmtest/node-npmtest-blynk-library.svg)](https://travis-ci.org/npmtest/node-npmtest-blynk-library)
 
 #### Blynk library implementation for JavaScript (Node.js, Espruino)
 
@@ -10,7 +10,7 @@
 |--:|:--|
 | coverage : | [![istanbul-coverage](https://npmtest.github.io/node-npmtest-blynk-library/build/coverage.badge.svg)](https://npmtest.github.io/node-npmtest-blynk-library/build/coverage.html/index.html)|
 | test-report : | [![test-report](https://npmtest.github.io/node-npmtest-blynk-library/build/test-report.badge.svg)](https://npmtest.github.io/node-npmtest-blynk-library/build/test-report.html)|
-| build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-blynk-library/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-blynk-library/tree/gh-pages/build)|
+| test-server-github : | [![github.com test-server](https://npmtest.github.io/node-npmtest-blynk-library/GitHub-Mark-32px.png)](https://npmtest.github.io/node-npmtest-blynk-library/build/app/index.html) | | build-artifacts : | [![build-artifacts](https://npmtest.github.io/node-npmtest-blynk-library/glyphicons_144_folder_open.png)](https://github.com/npmtest/node-npmtest-blynk-library/tree/gh-pages/build)|
 
 - [https://npmtest.github.io/node-npmtest-blynk-library/build/coverage.html/index.html](https://npmtest.github.io/node-npmtest-blynk-library/build/coverage.html/index.html)
 
@@ -35,27 +35,32 @@
 ```json
 
 {
-    "name": "blynk-library",
-    "version": "0.4.7",
-    "description": "Blynk library implementation for JavaScript (Node.js, Espruino)",
-    "author": "Volodymyr Shymanskyy",
-    "license": "MIT",
-    "main": "./blynk.js",
+    "author": {
+        "name": "Volodymyr Shymanskyy"
+    },
     "bin": {
         "blynk-client": "bin/blynk-client.js",
         "blynk-ctrl": "bin/blynk-ctrl.js"
     },
-    "engines": {
-        "node": ">= 0.12.0"
-    },
-    "scripts": {
-        "prepublish": "make clean all",
-        "test": "echo \"Error: no test specified\" && exit 1"
-    },
     "browser": {
         "./blynk-node.js": false
     },
+    "bugs": {
+        "url": "https://github.com/vshymanskyy/blynk-library-js/issues"
+    },
     "dependencies": {},
+    "description": "Blynk library implementation for JavaScript (Node.js, Espruino)",
+    "devDependencies": {},
+    "directories": {},
+    "dist": {
+        "shasum": "ccde038bf9e9bb5748bc473036bf25701d43bd8d",
+        "tarball": "https://registry.npmjs.org/blynk-library/-/blynk-library-0.4.7.tgz"
+    },
+    "engines": {
+        "node": ">= 0.12.0"
+    },
+    "gitHead": "79524abdf5168b5b6811ec6ef67d6ac356dbe5d2",
+    "homepage": "https://github.com/vshymanskyy/blynk-library-js#readme",
     "keywords": [
         "Arduino",
         "Espruino",
@@ -63,13 +68,24 @@
         "IoT",
         "Internet of Things"
     ],
+    "license": "MIT",
+    "main": "./blynk.js",
+    "maintainers": [
+        {
+            "name": "vshymanskyy"
+        }
+    ],
+    "name": "blynk-library",
+    "optionalDependencies": {},
     "repository": {
         "type": "git",
-        "url": "https://github.com/vshymanskyy/blynk-library-js"
+        "url": "git+https://github.com/vshymanskyy/blynk-library-js.git"
     },
-    "bugs": {
-        "url": "https://github.com/vshymanskyy/blynk-library-js/issues"
-    }
+    "scripts": {
+        "prepublish": "make clean all",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "version": "0.4.7"
 }
 ```
 
